@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #0f0d07;
+  --surface: #1a1610;
+  --surface2: #231e12;
+  --border: #2e2a1e;
+  --gold: #f5c542;
+  --gold-dim: rgba(245,197,66,0.18);
+  --text: #f0e8d0;
+  --muted: #6b6453;
+  --radius: 12px;
+}
+
+html, body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'IBM Plex Mono', monospace;
+  min-height: 100vh;
+}
+
+::selection {
+  background: var(--gold-dim);
+  color: var(--gold);
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: #2e2a1e; border-radius: 3px; }
+
+button { cursor: pointer; font-family: inherit; }
+textarea { font-family: inherit; }
